@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import ImageIcon from "@ui/Image";
-import Search from "@components/search";
+import Search from "@components/Search";
 
 const Feed = () => {
   const [updateNewposts, setUpdateNewposts] = useState([]);

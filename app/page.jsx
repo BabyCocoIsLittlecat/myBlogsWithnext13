@@ -1,5 +1,5 @@
 import Feed from "@components/Feed";
-import DisplayClouds from "@components/displayClouds";
+import DisplayClouds from "@components/DisplayClouds";
 
 const Home = () => {
   return (
