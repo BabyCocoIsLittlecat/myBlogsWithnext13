@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main{
+  @apply bg-[url('/assets/images/watercolor.jpg')] bg-no-repeat bg-center bg-cover bg-sky-50 min-h-screen px-7 font-Itim;
+}
+
+.col{
+  @apply flex flex-col items-center w-full;
+}
+
+.row{
+  @apply flex flex-row items-center justify-around;
+}
+
+.section {
+  @apply text-sky-900 p-5; 
+}
+
+.clouds-area{
+  @apply flex w-full justify-evenly my-5;
+}
+
+.nav-bar{
+  @apply flex justify-between w-full py-3 items-center;
+}
+
+.gradient-black {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-cyan-800;
+}
+
+.gradient-blue {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-black;
+}
+
+.gradient-black-white {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-black to-white;
+}
+
+.gradient-purple-white {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-[#d9c3ff] to-white;
+}
+
+.gradient-purple-pink {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-600;
+}
+
+.gradient-oc-bg{
+  @apply bg-gradient-to-r from-blue-300 to-purple-200;
+}
+
+.gradient-pc-bg{
+  @apply bg-gradient-to-r from-pink-300 to-yellow-200;
+}
+
+.gradient-green-bg{
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500;
+}
+
+.gradient-pink-bg{
+  @apply bg-gradient-to-r from-purple-500 to-pink-500;
+}
+
+.gradient-yellow-bg{
+  @apply bg-gradient-to-r from-yellow-200 to-yellow-400;
+}
+
+.text-title {
+  @apply capitalize m-5 text-6xl font-extrabold p-1;
+}
+
+.text-des{
+  @apply mt-1 mb-1 capitalize text-4xl font-extrabold;
+}
+
+.text-subTitle{
+  @apply mt-1 mb-1 capitalize text-2xl font-extrabold;
+}
+
+.text-card{
+  @apply px-3.5 mb-1 py-2 capitalize text-lg font-semibold;
+}
+
+.btn-register{
+  @apply w-fit flex justify-end;
+}
+
+.btn{
+  @apply rounded-2xl p-2 capitalize  mr-2 border-solid border-2 font-medium min-w-[5rem] min-h-[3rem];
+}
+
+.btn-action:hover,
+.btn-action:active{
+  @apply scale-105 border-blue-600 gradient-green-bg;
+}
+
+.btn-action-d:hover,
+.btn-action-d:active{
+  @apply scale-105 border-pink-400 gradient-pink-bg;
+}
+
+.btn-cancle:hover,
+.btn-cancle-d:active {
+  @apply scale-105 border-yellow-800 gradient-yellow-bg;
+}
+
+.btn-white{
+  @apply border-cyan-50 bg-slate-800 text-white;
+}
+
+.btn-active:hover,
+.btn-active:active{
+  @apply scale-105 border-indigo-950 bg-[#8bbfff] text-black
+}
+
+.btn-black{
+  @apply border-indigo-950 bg-sky-100 text-black;
+}
+
+.btn-Image{
+  @apply border-indigo-950 border-solid border-2 rounded-2xl bg-sky-100;
+}
+
+.profile-Detail{
+  @apply bg-amber-100 w-3/4 h-4/5 absolute z-50 flex-col p-2 right-0 items-end border-indigo-950 border-solid border-x-4 border-y-2 justify-evenly;
+}
+
+.desktop-screen{
+  @apply sm:flex items-center hidden;
+}
+
+.mobile-screen{
+  @apply sm:hidden;
+}
+
+.form-post{
+  @apply flex flex-col items-end p-4 w-full;
+}
+
+.underline{
+  @apply w-full h-0.5 my-2 opacity-60;
+}
+
+.default-box{
+  @apply w-full rounded-md p-4;
+}
+
+.display_posts{
+  @apply mt-1 flex flex-wrap justify-evenly px-4;
+}
+
+.searchForm{
+  @apply flex bg-slate-300 rounded-2xl my-3 relative h-10;
+}
+
+.searchIcon{
+  @apply absolute top-0 right-4 translate-y-1/4 opacity-30;
+}
+
+.searchTab{
+  @apply flex items-center w-72 text-left space-x-3 px-4 rounded-2xl bg-white ring-1 ring-slate-900/10 hover:ring-slate-700 focus:outline-none focus:ring-2;
+};
+
+.card{
+  @apply bg-white text-black hover:ring-gray-800  ring-1 ring-gray-100 focus:outline-none focus:ring-2 cursor-pointer;
+}
+
+.card_posts{
+  @apply flex w-[17rem] flex-col justify-evenly m-5 hover:scale-105 ;
+}
+
+.copy:hover{
+  @apply scale-105 border-indigo-950 text-right;
+}
+
+.hideCopy{
+  @apply hidden text-fuchsia-800 mr-3;
+}
+
+.copy:hover .hideCopy{
+  @apply block text-[12px];
+}
